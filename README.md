@@ -60,8 +60,7 @@ END POINT ERROR (EPE)
 
 This metric is the mean L1 loss between the ground truth disparity and the predicted disparity for each pixel. It is well regarded as the standard for the SceneFlow dataset.
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?\Large&space;
-    {\color{Yellow}MeanL1Loss = \frac{1}{n}\sum_{i=1}^{n}\left| y_{true} - y_{predicted}\right|}" />
+  <img width="350" height="75" src="./images/epe.svg">
 </p>
 
 THREE-PIXEL ERROR (%) 
