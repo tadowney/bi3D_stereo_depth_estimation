@@ -121,7 +121,7 @@ Inference times were clocked with an Nvidia Tesla V100 GPU on Santa Clara’s Hi
 
 ## Conclusion
 
-Bi3D offers a unique method that estimates depth via a series of binary classifications, enabling the ability for fine-grained control over computed depth. <u>We confirmed that for binary classification, Bi3D is indeed faster than both AnyNet and LEAStereo.</u> However, we found that Bi3D required ~10ms per quantization layer and as a result was not significantly faster than AnyNet or LEAStereo when requesting more than 3 quanization layers. <u>We found that Bi3D's inference speed comes at the cost of disparity accuracy.</u> Many stereo depth estimation algorithms are forced to choose between either generating accurate mappings at a slow pace or quickly constructing inaccurate ones. <u>Bi3D is no stranger to this phenomenon, with our results showing that it had the highest three pixel error.</u> Once concern to be had with Bi3D is the model size. Given the model has 36.3M parameters, it seems unrealistic to be able to run this in an autonomous vehicle as advertised. Future research into this problem statement should consider pruning the network to reduce the complexity. A model like AnyNet which only contains 36K parameters might be more appropriate depending on the application and hardware available.
+Bi3D offers a unique method that estimates depth via a series of binary classifications, enabling the ability for fine-grained control over computed depth. **We confirmed that for binary classification, Bi3D is indeed faster than both AnyNet and LEAStereo.** However, we found that Bi3D required ~10ms per quantization layer and as a result was not significantly faster than AnyNet or LEAStereo when requesting more than 3 quanization layers. **We found that Bi3D's inference speed comes at the cost of disparity accuracy.** Many stereo depth estimation algorithms are forced to choose between either generating accurate mappings at a slow pace or quickly constructing inaccurate ones. **Bi3D is no stranger to this phenomenon, with our results showing that it had the highest three pixel error.** Once concern to be had with Bi3D is the model size. Given the model has 36.3M parameters, it seems unrealistic to be able to run this in an autonomous vehicle as advertised. Future research into this problem statement should consider pruning the network to reduce the complexity. A model like AnyNet which only contains 36K parameters might be more appropriate depending on the application and hardware available.
 
 ## Usage
 
@@ -154,6 +154,3 @@ Bi3D offers a unique method that estimates depth via a series of binary classifi
     ```sh
     ./Bi3D/src/run_demo_continuous.sh
     ```
-
-
-
