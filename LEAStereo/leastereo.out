@@ -1,0 +1,9 @@
+
+libgomp: Invalid value for environment variable OMP_PROC_BIND
+/WAVE/users/unix/tdowney/.local/lib/python3.7/site-packages/skimage/io/manage_plugins.py:23: UserWarning: Your installed pillow version is < 7.1.0. Several security issues (CVE-2020-11538, CVE-2020-10379, CVE-2020-10994, CVE-2020-10177) have been fixed in pillow 7.1.0 or higher. We recommend to upgrade this library.
+  from .collection import imread_collection_wrapper
+Namespace(batch_size=4, cell_arch_fea='run/sceneflow/best/architecture/feature_genotype.npy', cell_arch_mat='run/sceneflow/best/architecture/matching_genotype.npy', crop_height=384, crop_width=576, cuda=1, dataset='sceneflow', fea_block_multiplier=4, fea_filter_multiplier=8, fea_num_layers=6, fea_step=3, lr=0.001, mat_block_multiplier=4, mat_filter_multiplier=8, mat_num_layers=12, mat_step=3, maxdisp=192, milestones=[30, 50, 300], nEpochs=20, net_arch_fea='run/sceneflow/best/architecture/feature_network_path.npy', net_arch_mat='run/sceneflow/best/architecture/matching_network_path.npy', resume='', save_path='./run/sceneflow/retrain/', seed=2019, shift=0, solver='adam', stage='train', testBatchSize=2, threads=8)
+Traceback (most recent call last):
+  File "/WAVE/users/unix/tdowney/DeepLearning/project/LEAStereo-master/LEAStereo-master/train.py", line 35, in <module>
+    raise Exception("No GPU found, please run without --cuda")
+Exception: No GPU found, please run without --cuda
